@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+ <PreferenceCategory
+   android:summary="User related setting"
+   android:title="@string/preference_section_user" >
+  <CheckBoxPreference
+     android:key="@string/key_userlogin"
+     android:title="@string/text_userlogin" />
+  <CheckBoxPreference
+     android:key="@string/key_searchhistory"
+     android:title="@string/text_searchhistory" />
+  <CheckBoxPreference
+	 android:key="@string/key_viewhistory"
+	 android:title="@string/text_viewhistory" />
+ </PreferenceCategory>
+
+ <PreferenceCategory
+   android:summary="Browsing related setting"
+   android:title="@string/preferece_section_view" >
+  <CheckBoxPreference
+     android:key="@string/key_viewimage"
+     android:title="@string/text_viewimage" />
+  <ListPreference
+     android:entries="@array/list_language"
+     android:entryValues="@array/list_languageValue"
+     android:key="@string/key_language"
+     android:title="@string/text_language" />
+  <EditTextPreference
+     android:key="@string/key_cachesize"
+     android:title="@string/text_cachesize" />
+  
+ </PreferenceCategory>
+</PreferenceScreen>

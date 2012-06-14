@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">Hello World, ROSEpredesignActivity!</string>
-    <string name="app_name">ROSEpredesign</string>
+    <string name="hello">欢迎</string>
+    <string name="app_name">ROSE实验</string>
 
     <!-- user preference -->
-    <string name="preference_section_user">User Setting</string>
+    <string name="preference_section_user">用户设定</string>
 
     <string name="key_userlogin">UserLogin</string>
-    <string name="text_userlogin">Keep me logged in</string>
+    <string name="text_userlogin">保持登录状态</string>
     
     <string name="key_searchhistory">SearchHistory</string>
-    <string name="text_searchhistory">Save searching history</string>
+    <string name="text_searchhistory">保存搜索历史</string>
 	
 	<string name="key_viewhistory">ViewHistory</string>
-    <string name="text_viewhistory">Save browsing history</string>    
+    <string name="text_viewhistory">保存浏览历史</string>    
     
     
-    <string name="preferece_section_view">App Setting</string>
+    <string name="preferece_section_view">浏览设定</string>
 	
     <string name="key_language">Language</string>
-    <string name="text_language">Language</string>
+    <string name="text_language">语言</string>
     <string-array name="list_language">
         <item>English</item>
         <item>简体中文</item>
@@ -31,8 +31,8 @@
     </string-array>
     
     <string name="key_viewimage">ViewImage</string>
-    <string name="text_viewimage">Load Image For Products</string>
+    <string name="text_viewimage">显示物品图片</string>
 
 	<string name="key_cachesize">CacheSize</string>
-	<string name="text_cachesize">Set Cache Size (in MB)</string>
+	<string name="text_cachesize">设置缓存大小（单位：MB）</string>
 </resources>
