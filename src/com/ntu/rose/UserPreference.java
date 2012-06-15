@@ -27,8 +27,21 @@ public class UserPreference extends PreferenceActivity {
 		ListPreference language = (ListPreference) findPreference(getResources().getText(R.string.key_language));
 		language.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
 			public boolean onPreferenceChange(Preference preference, Object newValue) {
-				// switch language
-				conf.locale = new Locale(((String)newValue).toLowerCase());
+				
+				// switch language (just can't pass the sc and tc text into locale, fail for unknown reason)
+				int index = Integer.parseInt((String) newValue);
+				switch(index){
+				case 0:
+					conf.locale = Locale.ENGLISH;
+					break;
+				case 1:
+					conf.locale = Locale.SIMPLIFIED_CHINESE;
+					break;
+				case 2:
+					conf.locale = Locale.TRADITIONAL_CHINESE;
+					break;
+				}
+				
 				res.updateConfiguration(conf, dm);
 				// refresh current list
 				startActivity(getIntent()); 

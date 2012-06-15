@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">歡迎</string>
+    <string name="app_name">ROSE實驗</string>
+
+    <!-- user preference -->
+    <string name="preference_section_user">用戶設定</string>
+
+    <string name="key_userlogin">UserLogin</string>
+    <string name="text_userlogin">保持登錄狀態</string>
+    
+    <string name="key_searchhistory">SearchHistory</string>
+    <string name="text_searchhistory">保存搜索歷史</string>
+	
+	<string name="key_viewhistory">ViewHistory</string>
+    <string name="text_viewhistory">保存瀏覽歷史</string>    
+    
+    
+    <string name="preferece_section_view">瀏覽設定</string>
+	
+    <string name="key_language">Language</string>
+    <string name="text_language">語言</string>
+    <string-array name="list_language">
+        <item>English</item>
+        <item>简体中文</item>
+        <item>繁體中文</item>
+    </string-array>
+    <string-array name="list_languageValue">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    
+    <string name="key_viewimage">ViewImage</string>
+    <string name="text_viewimage">顯示商品圖片</string>
+
+	<string name="key_cachesize">CacheSize</string>
+	<string name="text_cachesize">設置緩存大小（單位：MB）</string>
+	
+	<!-- search -->
+	<string name="search_hint">搜索商品</string>
+	<string name="search_button_text">搜索</string>
+	<string name="search_voice_hint">語音搜索使用系統默认语言，點擊右方扳手切換語言</string>
+</resources>
