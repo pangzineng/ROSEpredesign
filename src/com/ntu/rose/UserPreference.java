@@ -2,6 +2,7 @@ package com.ntu.rose;
 
 import java.util.Locale;
 
+import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -23,12 +24,9 @@ public class UserPreference extends PreferenceActivity {
 		final Resources res = getApplicationContext().getResources();
 		final DisplayMetrics dm = res.getDisplayMetrics();
 		final Configuration conf = new Configuration();
-		String key_language = (String) getResources().getText(R.string.key_language);
-		ListPreference language = (ListPreference) findPreference(key_language);
-		language.setSummary(language.getValue());
+		ListPreference language = (ListPreference) findPreference(getResources().getText(R.string.key_language));
 		language.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
 			public boolean onPreferenceChange(Preference preference, Object newValue) {
-				preference.setSummary((CharSequence) newValue);
 				// switch language
 				conf.locale = new Locale(((String)newValue).toLowerCase());
 				res.updateConfiguration(conf, dm);
@@ -49,5 +47,11 @@ public class UserPreference extends PreferenceActivity {
 				return true;
 			}
 		});
+	}
+	
+	@Override
+	protected void onResume() {
+		super.onResume();
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 	}
 }

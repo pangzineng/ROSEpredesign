@@ -28,6 +28,5 @@
   <EditTextPreference
      android:key="@string/key_cachesize"
      android:title="@string/text_cachesize" />
-  
  </PreferenceCategory>
 </PreferenceScreen>

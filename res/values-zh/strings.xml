@@ -31,8 +31,13 @@
     </string-array>
     
     <string name="key_viewimage">ViewImage</string>
-    <string name="text_viewimage">显示物品图片</string>
+    <string name="text_viewimage">显示商品图片</string>
 
 	<string name="key_cachesize">CacheSize</string>
 	<string name="text_cachesize">设置缓存大小（单位：MB）</string>
+	
+	<!-- search -->
+	<string name="search_hint">搜索商品</string>
+	<string name="search_button_text">搜索</string>
+	<string name="search_voice_hint">语音搜索使用系统默认语言，点击右方扳手切换语言</string>
 </resources>

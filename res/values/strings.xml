@@ -35,4 +35,9 @@
 
 	<string name="key_cachesize">CacheSize</string>
 	<string name="text_cachesize">Set Cache Size (in MB)</string>
+	
+	<!-- search -->
+	<string name="search_hint">Search products</string>
+	<string name="search_button_text">Search</string>
+	<string name="search_voice_hint">You are using voice search</string>
 </resources>
